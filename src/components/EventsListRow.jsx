@@ -1,10 +1,8 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 const EventsListRow = ({ id, title, category, date, time, city }) => {
-  const events = useSelector((state) => state);
-
   const dispatch = useDispatch();
 
   const deleteEvent = (id) => {
