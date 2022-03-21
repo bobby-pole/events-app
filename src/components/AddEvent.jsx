@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+// import { addEvent } from "../redux/actions/eventActions";
 
 const AddEvent = () => {
   const [title, setTitle] = useState("");
@@ -16,41 +17,41 @@ const AddEvent = () => {
   const [city, setCity] = useState("");
 
   const events = useSelector((state) => state);
-  const dispatch = useDispatch();
 
   const navigate = useNavigate();
+  // const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const checkTitle = events.find((event) => event.title === title && title);
+    // const checkTitle = events.find((event) => event.title === title && title);
 
-    const checkNumber = events.find(
-      (event) => event.number === number && number
-    );
+    // const checkNumber = events.find(
+    //   (event) => event.number === number && number
+    // );
 
-    const checkEmail = events.find((event) => event.email === email && email);
+    // const checkEmail = events.find((event) => event.email === email && email);
 
-    if (
-      !title ||
-      !number ||
-      !email ||
-      !date ||
-      !time ||
-      !description ||
-      !city
-    ) {
-      return toast.warning("Please fill all fields");
-    }
-    if (checkTitle) {
-      return toast.error("This title is already in use");
-    }
-    if (checkNumber) {
-      return toast.error("This phone number is already in use");
-    }
-    if (checkEmail) {
-      return toast.error("This e-mail is already in use");
-    }
+    // if (
+    //   !title ||
+    //   !number ||
+    //   !email ||
+    //   !date ||
+    //   !time ||
+    //   !description ||
+    //   !city
+    // ) {
+    //   return toast.warning("Please fill all fields");
+    // }
+    // if (checkTitle) {
+    //   return toast.error("This title is already in use");
+    // }
+    // if (checkNumber) {
+    //   return toast.error("This phone number is already in use");
+    // }
+    // if (checkEmail) {
+    //   return toast.error("This e-mail is already in use");
+    // }
 
     const data = {
       id: events[events.length - 1].id + 1,
@@ -65,7 +66,19 @@ const AddEvent = () => {
       city,
     };
 
-    dispatch({ type: "ADD_EVENT", payload: data });
+    console.log(data);
+
+    // const postEvent = async () => {
+    //   fetch("http://localhost:4000/events", {
+    //     method: "POST",
+    //     body: data,
+    //   })
+    //     .then((response) => response.json())
+    //     .then((result) => {
+    //       dispatch(addEvent(data));
+    //     });
+    // };
+
     toast.success("Event added!");
     navigate("/");
   };

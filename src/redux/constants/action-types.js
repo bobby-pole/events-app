@@ -1,0 +1,7 @@
+export const ActionTypes = {
+  SET_EVENTS: "SET_EVENTS",
+  ADD_EVENT: "ADD_EVENT",
+  EDIT_EVENT: "EDIT_EVENT",
+  DELETE_EVENT: "DELETE_EVENT",
+  SHOW_EVENT: "SHOW_EVENT",
+};

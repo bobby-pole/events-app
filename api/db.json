@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "id": 0,
+      "title": "Bon Jovi Live",
+      "date": "2022-06-03",
+      "time": "20:00",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan et odio pulvinar efficitur. Morbi lobortis elit a pretium convallis. Etiam vitae bibendum sapien. Donec ut arcu massa. Cras sollicitudin.",
+      "img": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": "Culture",
+      "phone": "+48 000 000 000",
+      "email": "example@somemail.com",
+      "city": "Warsaw"
+    },
+    {
+      "id": 1,
+      "title": "Krwiodawstwo",
+      "date": "2022-08-05",
+      "time": "10:00",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan et odio pulvinar efficitur. Morbi lobortis elit a pretium convallis. Etiam vitae bibendum sapien. Donec ut arcu massa. Cras sollicitudin.",
+      "img": "https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": "Health",
+      "phone": "+48 000 999 000",
+      "email": "example1@somemail.com",
+      "city": "Rybnik"
+    },
+    {
+      "id": 2,
+      "title": "Silesia Marathon",
+      "date": "2022-10-03",
+      "time": "11:00",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan et odio pulvinar efficitur. Morbi lobortis elit a pretium convallis. Etiam vitae bibendum sapien. Donec ut arcu massa. Cras sollicitudin.",
+      "img": "https://images.unsplash.com/photo-1596727362302-b8d891c42ab8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=785&q=80",
+      "category": "Sport",
+      "phone": "+48 999 999 000",
+      "email": "example2@somemail.com",
+      "city": "Katowice"
+    },
+    {
+      "id": 3,
+      "title": "Rammstein",
+      "date": "2022-09-22",
+      "time": "20:00",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan et odio pulvinar efficitur. Morbi lobortis elit a pretium convallis. Etiam vitae bibendum sapien. Donec ut arcu massa. Cras sollicitudin.",
+      "img": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "category": "Culture",
+      "phone": "+48 110 220 330",
+      "email": "example@mailmail.com",
+      "city": "Wrocław"
+    }
+  ]
+}

@@ -8,11 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
-import { createStore } from "redux";
-import eventReducer from "./redux/reducers/eventReducer";
+import store from "./redux/store";
 import { Provider } from "react-redux";
-
-const store = createStore(eventReducer);
 
 ReactDOM.render(
   <React.StrictMode>
